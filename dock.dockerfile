@@ -2,7 +2,7 @@ FROM nginx:alpine
 WORKDIR /usr/share/nginx/html
 RUN rm -rf ./*
 RUN apk add --no-cache git && \
-git clone https://github.com/shreyahegde26/PES2UG22CS532/tree/main/PES2UG22CS532/CC_Monolith /temp-repo && \
+git clone https://github.com/shreyahegde26/Portfolio && \
 cp -r /temp-repo/*o/* . && \
 rm -rf /temp-repo
 EXPOSE 80
